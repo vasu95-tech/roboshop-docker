@@ -3,7 +3,7 @@ EXPOSE 8080
 WORKDIR /opt/server
 COPY payment-v3 .
 RUN pip3 install -r requirements.txt
-ENV =CART_HOST="cart" \
+ENV  CART_HOST="cart" \
      CART_PORT="8080" \
      USER_HOST="user" \
      USER_PORT="8080" \
